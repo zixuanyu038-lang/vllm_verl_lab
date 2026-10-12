@@ -1,6 +1,6 @@
 # 双卡 Linux vLLM SFT GRPO 实验
 
-与两篇《AI Infra 实操》配套。WSL 仅作为终端和 SSH 入口，正式实验在一台 Linux NVIDIA 双卡主机完成。
+与两篇公众号实验配套。WSL 仅作为终端和 SSH 入口，正式实验在一台 Linux NVIDIA 双卡主机完成。
 
 **这里提供可运行配方，不代表已经完成双卡 GPU 实测。synthetic_results.json 是明确标注的模拟数据，不由训练脚本产生。真实脚本将结果写到 runs/，不读取模拟文件。**
 
