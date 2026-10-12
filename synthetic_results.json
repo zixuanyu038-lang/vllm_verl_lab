@@ -1,0 +1,17 @@
+{
+  "source": "SIMULATED_NOT_MEASURED",
+  "purpose": "仅用于文章中演示指标含义；不是GPU运行日志，不预测真实成绩",
+  "assumed_hardware": "Linux, 2 x RTX 3090 24GB; inference benchmark uses GPU0 only",
+  "benchmark": [
+    {"concurrency": 1, "requests": 32, "output_tokens": 2048, "wall_s": 14.8, "output_tokens_per_s": 138.3783783783784, "ttft_mean_s": 0.041},
+    {"concurrency": 8, "requests": 32, "output_tokens": 2048, "wall_s": 4.8, "output_tokens_per_s": 426.6666666666667, "ttft_mean_s": 0.078}
+  ],
+  "validation": {"count": 128, "base": {"format_ok": 89, "correct": 61}, "sft": {"format_ok": 126, "correct": 96}},
+  "sft_loss": [{"step": 5, "loss": 2.18}, {"step": 20, "loss": 0.74}, {"step": 40, "loss": 0.39}],
+  "grpo": [
+    {"step": 1, "correct_responses": 36, "responses": 64, "rollout_s": 2.8, "update_s": 3.7},
+    {"step": 10, "correct_responses": 43, "responses": 64, "rollout_s": 2.6, "update_s": 3.8},
+    {"step": 20, "correct_responses": 47, "responses": 64, "rollout_s": 2.7, "update_s": 3.7}
+  ],
+  "final_test": {"count": 128, "base_correct": 58, "sft_correct": 93, "grpo_correct": 97}
+}
